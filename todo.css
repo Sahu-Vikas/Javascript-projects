@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(73, 163, 0, 0.05);
+  /* height: 100vh; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.main {
+  padding: 5px 12px;
+}
+.heading {
+  font-size: 64px;
+  color: #48a300;
+  text-align: center;
+}
+#head-today {
+  color: #61481c;
+}
+.app-container {
+  border: 0px solid black;
+  margin-inline: auto;
+  border-radius: 5px;
+  padding: 32px 48px;
+  max-width: 660px;
+  box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fbfbfb;
+}
+.sub-heading {
+  font-size: 32px;
+}
+.progress-msg {
+  font-size: 14px;
+  color: #858585;
+  margin-bottom: 20px;
+}
+.progress-bar {
+  height: 30px;
+  background-color: rgba(72, 163, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 42px;
+}
+.progress-value {
+  height: 100%;
+  background-color: #48a300;
+  color: #fbfbfb;
+  width: 0%;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  /* visibility: hidden; */
+  overflow: hidden;
+  transition: width 1.5s ease-in;
+}
+.progress-value span {
+  padding-left: 20px;
+}
+.notify-msg {
+  font-size: 12px;
+  color: #ff5151;
+  /* position: absolute; */
+  margin-top: 15px;
+  display: none;
+}
+.show-msg .notify-msg {
+  display: block;
+}
+.goals {
+  height: 82px;
+  /* width: 100%; */
+  display: flex;
+  padding: 0 18px;
+  margin-bottom: 20px;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 13px;
+  background-color: #fff;
+}
+.checkbox {
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  border: 2px solid rgba(0, 0, 0, 0.649);
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+.completed .checkbox {
+  background-color: #48a300;
+  border-color: #48a300;
+}
+.check-img {
+  display: none;
+  /* color: #f6f6f6; */
+}
+.completed .check-img {
+  display: block;
+}
+input[type="text"] {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  padding-left: 18px;
+  outline: none;
+  border: none;
+}
+.completed > input[type="text"] {
+  color: #48a300;
+  text-decoration: line-through;
+}
+
+input[type="text"]::after {
+  border: blue;
+}
+input[type="text"]::placeholder {
+  color: #615f5f92;
+}
+.quote {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* media query */
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 20px;
+  }
+  .heading {
+    font-size: 32px;
+  }
+  .sub-heading {
+    padding: 8px 10px;
+  }
+}
